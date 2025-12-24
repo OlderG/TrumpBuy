@@ -1,0 +1,53 @@
+/* 背景径向渐变，还原原图深色质感 */
+body {
+  background: radial-gradient(circle at center, #014d4e 0%, #000000 100%);
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* 按钮基础样式 */
+.glass-button {
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* 悬停效果 */
+.glass-button:hover {
+  transform: scale(1.02);
+  border-color: #ffffff;
+  background-color: #0a0a0a;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* 按钮左侧图标容器 */
+.icon-box {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* 底部 Beacons 模拟图标 */
+.beacons-logo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20px;
+  height: 20px;
+  gap: 2px;
+}
+
+.beacons-logo .dot {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
